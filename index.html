@@ -1,71 +1,171 @@
-<DOCTYPE HTML>
-  <head>
-    <style>
-      body {
-        background-color: black;
-        text-align: center;
-      }
-      
-      h1 {
-        text-decoration: underline;
-        color: white;
-      }
-      
-      h2 {
-        text-decoration:;
-        color: white;
-      }
-      
-      h3 { 
-        background-color:rgb(0, 204, 255);
-        text-descoration:;
-        color: black ;
-        text-align:
-      } 
-      
-      #list {
-       color: white ;
-        background-color:rgb(0, 204, 255);
-      } 
-      
-      p { 
-        color: white 
-      } 
-      
-      h4 { 
-        color:white;
-        text-align:
-        background-color:rgb(0, 204, 255);
-      } 
-      
-      
-      
-      
-    </style>
-  </head>
-  <body>
-     <ul id="list"
-      <li><a href="http://scratchpad.io/plausible-flag-7915">Home</a></li>
-      <li><a href="http://scratchpad.io/pleasant-scarf-6740">About Me</a></li>
-      <li><a href="http://scratchpad.io/vigorous-beam-8181">Portfolio</a></li>
-    </ul>
-    <h1>Daniella Martinez</h1>
-    <h2>Founding 9th Grade Student at Alpha Cindy Avitia Student</h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Daniella's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color: #000000;
+    }
     
-    <img src="http://www.lovethispic.com/uploaded_images/59434-Palm-Tree-Glare.jpg"</alt>
-   <h3> About Me </h3> 
-   <p> My name is Daniella Martinez and I am currently attending Alpha Cindy Avitia High School.I was born and raised in San Jose CA. I am 14 years old and my birthday is on May 3. I have 5 older brothers and 1 younger sister. I love spending time with my family,traveling,watching tv shows, nature, and reading books. 
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#000000
+      ;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #9999ff;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#ffffff;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+;
       
-    </p> 
-   
-   <h4> Dreams In Life </h4>
-   <p> Once I graduate high school, I want to travel and learn more about other cultures. I want to attend U.C.L.A or UCSC and get my teaching credential to become a elementary school teacher and study abroad in Europe. 
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color:#ffffff
+      ;
+    }
+
+    .sidebar ul ul li a:hover{
+      
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: center;
+      /* TODO: Update the following image */
+      background-image: url("http://hd.wallpaperswide.com/thumbs/disneyland_sleeping_beauty_castle___winter-t2.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 15px 20px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 30px;
+    }
+    
+    h1{
+      text-decoration;;
+      color:white;
+    }
+    
+    h2{ 
+      text-decoration;;
+      color:white;
+    }
+    
+    p{
+      text-decoration;;
+      color:white;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title"> Daniella's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info"> I am currently attending Alpha Cindy Avitia High School.I was born and raised in San Jose CA. I am 14 years old and my birthday is on May 3. I have 5 older brothers and 1 younger sister. I love spending time with my family,traveling,watching tv shows, nature, and reading books. 
+            </div>
+            <div class="right-panel">
+                <h2 class="sub-title">Dreams In Life</h2>
+                <p class="text-info">Once I graduate high school, I want to travel and learn more about other cultures. I want to attend U.C.L.A or UCSC and get my teaching credential to become a elementary school teacher and study abroad in Europe. 
      
-     </p>
-   
-   
-   
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
     
     
-  </body>
-</DOCTYPE>
+
+</body>
+</html>
